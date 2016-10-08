@@ -1,0 +1,4 @@
+#!/usr/bin/env node
+
+const kexec = require('kexec')
+kexec(require.resolve('ned-test/bin/cmd'), process.argv.slice(2))

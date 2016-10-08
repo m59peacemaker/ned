@@ -1,0 +1,33 @@
+{
+  "name": "ned",
+  "version": "0.0.1",
+  "description": "An opinionated cli for development needs so node developers can just write code.",
+  "keywords": [],
+  "main": "index.js",
+  "bin": {
+    "ned": "bin/ned"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/m59peacemaker/ned"
+  },
+  "author": {
+    "name": "Johnny Hauser",
+    "email": "johnnyhauser@gmail.com"
+  },
+  "license": "VOL",
+  "dependencies": {
+    "bluebird": "^3.4.6",
+    "chalk": "^1.1.3",
+    "chokidar": "^1.6.0",
+    "commander": "^2.9.0",
+    "cp-pipe": "^1.0.1",
+    "debounce": "^1.0.0",
+    "exclusive-promise": "^1.0.0",
+    "kexec": "^3.0.0",
+    "ned-lint": "^1.0.0",
+    "ned-test": "0.0.0",
+    "ned-transpile": "^1.0.1",
+    "prefix-stream-lines": "^1.0.1"
+  }
+}
