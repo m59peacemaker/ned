@@ -47,6 +47,10 @@ ansi-styles@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-2.2.1.tgz#b432dd3358b634cf75e1e4664368240533c1ddbe"
 
+any-promise@^1.1.0, any-promise@~1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/any-promise/-/any-promise-1.3.0.tgz#abc6afeedcea52e809cdc0376aed3ce39635d17f"
+
 anymatch@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/anymatch/-/anymatch-1.3.0.tgz#a3e52fa39168c825ff57b0248126ce5a8ff95507"
@@ -707,6 +711,12 @@ ecc-jsbn@~0.1.1:
 end-of-stream@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/end-of-stream/-/end-of-stream-1.0.0.tgz#d4596e702734a93e40e9af864319eabd99ff2f0e"
+  dependencies:
+    once "~1.3.0"
+
+end-of-stream@~1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/end-of-stream/-/end-of-stream-1.1.0.tgz#e9353258baa9108965efc41cb0ef8ade2f3cfb07"
   dependencies:
     once "~1.3.0"
 
@@ -1861,12 +1871,6 @@ meow@^3.3.0:
     redent "^1.0.0"
     trim-newlines "^1.0.0"
 
-merge-stream@0.1.6:
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/merge-stream/-/merge-stream-0.1.6.tgz#5c81b612d8816509c9ae101f429cfc31f3191df7"
-  dependencies:
-    through2 "^0.6.1"
-
 merge-stream@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/merge-stream/-/merge-stream-1.0.0.tgz#9cfd156fef35421e2b5403ce11dc6eb1962b026e"
@@ -1982,9 +1986,9 @@ ned-test@0.0.0:
     tap-spec "^4.1.1"
     tape "^4.6.2"
 
-ned-transpile@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/ned-transpile/-/ned-transpile-1.0.4.tgz#85faef324fd3a38ad850e036ba415835dab47800"
+ned-transpile@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/ned-transpile/-/ned-transpile-1.0.5.tgz#4f2fe1ac329cc2d8b051cc0abdb7fcbc9905b32c"
   dependencies:
     babel-plugin-node-sourcemap-support "0.0.0"
     babel-plugin-root-require "^1.0.4"
@@ -1999,7 +2003,7 @@ ned-transpile@^1.0.4:
     gulp-babel "^6.1.2"
     gulp-if "^2.0.1"
     gulp-sourcemaps "^1.6.0"
-    merge-stream "0.1.6"
+    stream-to-promise "^2.2.0"
     throo "^1.0.0"
     through2 "^2.0.1"
     vinyl-fs "^2.4.4"
@@ -2640,6 +2644,20 @@ stream-shift@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/stream-shift/-/stream-shift-1.0.0.tgz#d5c752825e5367e786f78e18e445ea223a155952"
 
+stream-to-array@~2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/stream-to-array/-/stream-to-array-2.3.0.tgz#bbf6b39f5f43ec30bc71babcb37557acecf34353"
+  dependencies:
+    any-promise "^1.1.0"
+
+stream-to-promise@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/stream-to-promise/-/stream-to-promise-2.2.0.tgz#b1edb2e1c8cb11289d1b503c08d3f2aef51e650f"
+  dependencies:
+    any-promise "~1.3.0"
+    end-of-stream "~1.1.0"
+    stream-to-array "~2.3.0"
+
 string-width@^1.0.1, string-width@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-1.0.2.tgz#118bdf5b8cdc51a2a7e70d211e07e2b0b9b107d3"
@@ -2810,7 +2828,7 @@ through2@2.X, through2@^2.0.0, through2@^2.0.1, through2@~2.0.0:
     readable-stream "~2.0.0"
     xtend "~4.0.0"
 
-through2@^0.6.0, through2@^0.6.1:
+through2@^0.6.0:
   version "0.6.5"
   resolved "https://registry.yarnpkg.com/through2/-/through2-0.6.5.tgz#41ab9c67b29d57209071410e1d7a7a968cd3ad48"
   dependencies:
