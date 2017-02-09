@@ -1,6 +1,6 @@
 {
   "name": "ned",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "An opinionated cli for development needs so node developers can just write code.",
   "keywords": [],
   "main": "index.js",
@@ -15,7 +15,7 @@
     "name": "Johnny Hauser",
     "email": "johnnyhauser@gmail.com"
   },
-  "license": "VOL",
+  "license": "CC0-1.0",
   "dependencies": {
     "bluebird": "^3.4.6",
     "chalk": "^1.1.3",
